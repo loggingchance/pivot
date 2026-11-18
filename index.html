@@ -401,6 +401,27 @@ footer.site-footer a{color:var(--forest-700)}
   .case-card{padding:1.5rem 1.3rem}
   section.report-section{padding:1.8rem 1.2rem 2rem; margin:1.6rem 0; border-radius:12px}
 }
+
+/* Research notebook and Woods Run invitations */
+.notebook-panel{margin:2rem auto;padding:2rem;max-width:980px;border:2px solid var(--tan-500);border-radius:14px;background:var(--brand-dark-1);color:var(--brand-cream-text);box-shadow:var(--shadow)}
+.notebook-panel h2{color:#fff;margin:0 0 .8rem;font-size:1.8rem;line-height:1.25}
+.notebook-panel p{max-width:74ch}
+.notebook-panel .eyebrow{color:var(--brand-tan-text);font-family:var(--sans);font-size:.875rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.7rem}
+.notebook-panel .notebook-note{font-family:var(--sans);font-size:.9rem;color:#d4dfd2;margin:.8rem 0 0}
+.notebook-panel a{color:var(--brand-tan-text)}
+a.action-link{display:inline-block;border:1px solid var(--brand-tan-text);border-radius:7px;background:var(--brand-tan-text);color:var(--brand-dark-1)!important;padding:.75rem 1.1rem;font:600 1rem/1.4 var(--sans);text-decoration:none!important}
+a.action-link:hover{background:#fff;color:var(--brand-dark-1)!important}
+.prompt-list{display:grid;gap:.8rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.prompt-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.24);border-radius:8px;padding:1rem;display:flex;align-items:center;gap:1rem}
+.prompt-item p{margin:0;flex:1;font-size:1rem}
+.copy-prompt{flex-shrink:0;min-height:44px;border:1px solid var(--brand-tan-text);background:transparent;color:var(--brand-tan-text);border-radius:6px;padding:.55rem .8rem;cursor:pointer;font:600 .9rem var(--sans)}
+.copy-prompt:hover{background:rgba(255,255,255,.12)}
+.copy-feedback{display:block;min-height:1.5em;font:.875rem/1.5 var(--sans);color:#d4dfd2;margin-top:.7rem}
+.notebook-inline{padding:1rem 1.2rem;border-left:4px solid var(--tan-500);background:var(--paper);margin:1.4rem 0;font-size:1rem;max-width:74ch}
+.wrd-invitation{border:1px solid var(--brand-tan-text);border-radius:12px;padding:1.6rem;margin:2.2rem 0;max-width:74ch}
+.wrd-invitation h2{margin-top:0;font-size:1.6rem}
+.notebook-panel :focus-visible,.downloads-section :focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:640px){.notebook-panel{margin:1.2rem 1.1rem;padding:1.3rem}.notebook-panel h2{font-size:1.5rem}.prompt-item{display:block}.copy-prompt{margin-top:.7rem}.wrd-invitation{padding:1.2rem}}
 </style>
 </head>
 <body>
@@ -420,6 +441,7 @@ footer.site-footer a{color:var(--forest-700)}
   <div class="toc-brand"><span class="mark">&#127794;</span><span><span class="name">Forest Business School</span><br><span class="sub">Publication</span></span></div>
   <h2>Contents</h2>
   <ul id="desktopTocList">
+    <li><a href="#research-notebook">Explore the research notebook</a></li>
     <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#s1">1. Introduction</a></li>
     <li><a href="#s2">2. Research Approach</a></li>
@@ -458,6 +480,21 @@ footer.site-footer a{color:var(--forest-700)}
     <p class="hero-links"><a href="https://www.forestenterprise.org/">Forest Business School</a> &middot; <a href="#downloads">Download the papers</a></p>
   </div>
 </header>
+
+<section class="notebook-panel" id="research-notebook" aria-labelledby="notebook-heading">
+  <p class="eyebrow">Explore the FBS research</p>
+  <h2 id="notebook-heading">Explore options for your region</h2>
+  <p>Ask the Forest Business School research notebook about responses to lost low-grade wood markets and the lessons that may apply to your region or organization. Explore the two papers and their supporting public sources in NotebookLM.</p>
+  <a class="action-link" href="https://notebook.google.com/notebook/414ca468-fb46-45df-a03e-24243547bdc3" target="_blank" rel="noopener">Open the research notebook</a>
+  <p class="notebook-note">Opens in NotebookLM. Google sign-in required. Check the cited evidence and its date before using an answer to guide a decision.</p>
+  <ul class="prompt-list" aria-label="Suggested questions to copy into NotebookLM">
+    <li class="prompt-item"><p>What approaches might help a region that has lost its pulpwood market? Compare the documented examples and identify questions that need local investigation.</p><button type="button" class="copy-prompt" aria-label="Copy question about pulpwood market loss">Copy question</button></li>
+    <li class="prompt-item"><p>Compare documented examples that accept hardwood roundwood and work with outside suppliers. What does the evidence establish about each, and what still needs checking?</p><button type="button" class="copy-prompt" aria-label="Copy question about hardwood roundwood outlets">Copy question</button></li>
+    <li class="prompt-item"><p>For [your region], summarize the lessons from these cases for [your organization]. Include feedstock requirements, customers, transportation and financial considerations, with citations.</p><button type="button" class="copy-prompt" aria-label="Copy regional briefing question">Copy question</button></li>
+  </ul>
+  <span class="copy-feedback" role="status" aria-live="polite">Copy a question, open the notebook, and adapt it to your situation.</span>
+</section>
+
 
 <aside class="research-integrity-note">
   <h2>Research integrity note</h2>
@@ -619,6 +656,7 @@ footer.site-footer a{color:var(--forest-700)}
 
 <section class="report-section" id="s4">
   <h2>4. Cases Selected for Comparison</h2>
+  <aside class="notebook-inline">Want to compare these examples for your own situation? <a href="https://notebook.google.com/notebook/414ca468-fb46-45df-a03e-24243547bdc3" target="_blank" rel="noopener">Ask the research notebook</a> about material requirements, supplier access and regional lessons. Case-status statements reflect the dates given in the paper; confirm current operating conditions locally.</aside>
   <div class="prose">
   <p>Sixteen principal cases were selected to show differences in geography, actor, feedstock, scale, market reach, and operating status. Inclusion does not mean that every case is tied conclusively to one named closure or that every operating claim has been independently quantified. Some are direct responses to market loss. Others are durable operating models that show what a business must do to use material competing for weakened low-grade outlets. Figure 4 maps the selected cases; the points identify facilities or project centers, not procurement territories or relative market volume.</p>
   </div>
@@ -1439,11 +1477,17 @@ footer.site-footer a{color:var(--forest-700)}
 <section class="downloads-section" id="downloads">
   <div class="downloads-inner">
     <h2>Download the papers</h2>
+    <p><a href="https://notebook.google.com/notebook/414ca468-fb46-45df-a03e-24243547bdc3" target="_blank" rel="noopener">Explore the papers and public supporting sources in the FBS research notebook</a>, or read the original papers below. You can ask questions and view any prepared materials available in the notebook.</p>
     <p>Download the full reports as PDFs:</p>
     <ul>
       <li><a href="https://drive.google.com/file/d/1JQQOUi87iB8oAldvGjO2kO538wL1Xi2l/view?usp=sharing" target="_blank" rel="noopener">Download this paper: <em>Business and Market Responses to the Loss of Low-Grade Wood Markets in the United States</em></a></li>
       <li><a href="https://drive.google.com/file/d/1VBoAlBwpU6v8azEULuBxaJ1MjTchOiS4/view?usp=sharing" target="_blank" rel="noopener">Download the primer: <em>Finch Paper and the Continuing Loss of Low-Grade Wood Markets in the United States</em></a></li>
     </ul>
+    <aside class="wrd-invitation" aria-labelledby="wrd-heading">
+      <h2 id="wrd-heading">Keep up with the issues shaping forest businesses</h2>
+      <p>If issues like this one are important to you, subscribe to the free Woods Run Digest. Get forestry and wood-products news, practical resources and opportunities from across the United States and Canada, delivered to your inbox.</p>
+      <a class="action-link" href="https://woodsrun.forestenterprise.org/subscribe/">Subscribe to the free Woods Run Digest</a>
+    </aside>
     <h2>Continue with The Forest Business School</h2>
     <ul>
       <li><a href="https://www.forestenterprise.org/">Visit The Forest Business School</a></li>
@@ -1485,7 +1529,7 @@ footer.site-footer a{color:var(--forest-700)}
   mobileList.addEventListener('click', function(e){ if(e.target.tagName === 'A') closePanel(); });
 
   // Active TOC highlighting
-  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id], section.downloads-section[id]'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id], section.downloads-section[id], section.notebook-panel[id]'));
   var tocLinks = Array.prototype.slice.call(desktopList.querySelectorAll('a'));
   function onScroll(){
     var pos = window.scrollY + 140;
@@ -1497,6 +1541,26 @@ footer.site-footer a{color:var(--forest-700)}
   }
   document.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
+
+
+  // Copyable notebook questions; preserve selectable text if clipboard access fails.
+  document.querySelectorAll('.copy-prompt').forEach(function(button){
+    button.addEventListener('click', async function(){
+      var question = button.parentElement.querySelector('p');
+      var feedback = document.querySelector('.copy-feedback');
+      try {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(question.textContent);
+        feedback.textContent = 'Question copied. Open the notebook and paste it into the chat.';
+      } catch (error) {
+        var selection = window.getSelection();
+        var range = document.createRange();
+        range.selectNodeContents(question);
+        selection.removeAllRanges(); selection.addRange(range);
+        feedback.textContent = 'Question selected. Use your device’s Copy command, then paste it into the notebook.';
+      }
+    });
+  });
 
   // Lightbox
   var lightbox = document.getElementById('lightbox');
